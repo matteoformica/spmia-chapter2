@@ -37,7 +37,7 @@
 				<configuration>
 				
 					<processTypes>
-						<web>java $JAVA_OPTS -cp licensing-service/target/classes:licensing-service/target/dependency/* Main</web>
+						<web>java $JAVA_OPTS -jar licensing-service/target/*.jar</web>
 					</processTypes>
 				</configuration>
 			</plugin>
