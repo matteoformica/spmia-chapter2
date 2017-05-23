@@ -30,6 +30,17 @@
         <imageName>example</imageName>
       </configuration>
       </plugin>
+      		<plugin>
+				<groupId>com.heroku.sdk</groupId>
+				<artifactId>heroku-maven-plugin</artifactId>
+				<version>1.1.3</version>
+				<configuration>
+				
+					<processTypes>
+						<web>java $JAVA_OPTS -cp licensing-service/target/classes:licensing-service/target/dependency/* Main</web>
+					</processTypes>
+				</configuration>
+			</plugin>
     </plugins>
   </build>
 </project>
